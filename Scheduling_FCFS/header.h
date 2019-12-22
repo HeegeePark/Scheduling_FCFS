@@ -70,7 +70,7 @@ void Scheduling(ProcessClass **_processArray, int*_processArray_Index, FCFS_Sche
 
 // 스케주링 실행결과를 cmd 창과 새로운 txt파일로 출력해주는 함수
 // 파라미터 : (스케줄링정보 객체, 총 프로세스 개수, READ용 txt파일 이름, WRITE용 txt파일 이름)
-void WirteExecutionResult(FCFS_Scheduling *_FCFSch, int* _processArray_Index, const char *_READ_FILE_NAME, const char *_WRITE_FILE_NAME);
+void WriteExecutionResult(FCFS_Scheduling *_FCFSch, int* _processArray_Index, const char *_READ_FILE_NAME, const char *_WRITE_FILE_NAME);
 
 // 배열 출력 함수 (개발 시 확인용)
 void showCharArray(char *, int);

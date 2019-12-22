@@ -4,7 +4,7 @@ using namespace std;
 
 // CONST
 const char READ_FILE_NAME[] = "FCFS_test.txt";
-const char WRITE_FILE_NAME[] = "FCFS_shcedulingResult.txt";
+const char WRITE_FILE_NAME[] = "FCFS_schedulingResult.txt";
 const int MAX_PROCESS_NUMBER = 100;
 
 // Variable
@@ -27,8 +27,9 @@ void main() {
 
 	// 스케줄링 실행 결과를 cmd 및 txt 파일에 출력
 	cout << "\nStep3 : Write File" << endl;
-	WirteExecutionResult(FCFSch, &processArray_Index, READ_FILE_NAME, WRITE_FILE_NAME);
+	WriteExecutionResult(FCFSch, &processArray_Index, READ_FILE_NAME, WRITE_FILE_NAME);
 	cout << "\nResult File Name = " << WRITE_FILE_NAME << endl;
 
 	system("pause");
 }//end main
+
